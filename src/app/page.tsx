@@ -1,7 +1,7 @@
 
 export default function Home() {
   return (
-    <div className="bg-red-500 text-green-400 ">
+    <div className="bg-red-500 text-green-400 container ">
       <main className="">
         test new test here 
       </main>
