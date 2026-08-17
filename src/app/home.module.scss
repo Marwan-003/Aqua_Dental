@@ -1,0 +1,144 @@
+@use '../styles/utilities/ui';
+.heading{
+    text-align: center;
+    margin-bottom: 4rem;
+    & > h2{
+        font-family: Outfit;
+        font-weight: 600;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    & > p {
+        max-width: 42rem;
+        margin-inline: auto;
+        font-family: Inter;
+        color: var(--neutral-600);
+     
+    }
+}
+
+.solution_card{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 300ms ease-in-out ;
+    border: 1px solid  var(--neutral-200);
+    @extend .shadow-light;
+    &:hover{
+      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
+      transform: translateY(-15px);
+      .icon{
+          color: white;
+          background-color: var(--primary-700);
+      }
+       .imageEffect{
+        filter: grayscale(0);
+        opacity: 1;
+    }
+    }
+    .icon{
+        color: var(--primary-800);
+        transition: all 300ms ease-in-out ;
+        font-size: 2rem;
+        width: 3.5rem;
+        height: 3.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1.25rem;
+        background-color: color-mix(in oklab, var(--primary-700) 10%, transparent);
+        flex-shrink: 0;
+    }
+    .card_tittle{
+        font-weight: 500;
+        font-family: Outfit;
+    }
+    .card_description{
+        font-family: Inter;
+        color: var(--neutral-600);
+    }
+     .imageEffect{
+        filter: grayscale(1);
+        opacity: .8;
+        transition: all 300ms ease-in-out ;
+    }
+}
+.animated_arrow_btn{
+    font-family: Inter;
+    color: var(--primary-800);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    cursor: pointer;
+    &:hover{
+        .arrow_icon{
+            animation: arrow 2s infinite ease-in-out alternate;
+        }
+    }
+}
+
+   
+.doctorCard{
+    &:hover{
+            .doctorImageContainer{  
+                img{
+                    filter: grayscale(0);
+                    scale: 1;
+                }
+                .doctorImageShadow{
+                    opacity: 1;
+                }
+
+            }
+    }
+   
+        .doctorImageContainer{
+            position: relative;
+            aspect-ratio: 3/4;
+            width: 100%;
+            border-radius: 2rem;
+            overflow: hidden;
+            img{
+                object-fit: cover;
+                transition: .4s ease-in-out;
+                filter: grayscale(1);
+                scale: 1.05;
+            }
+            .doctorImageShadow{
+                transition: .4s ease-in-out;
+                position: absolute;
+                bottom: 0;
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(360deg , rgb(0, 0, 0 , 0.8) 4%, transparent 50%);
+                opacity: 0;
+            }
+        }
+   
+    .doctorInfo{
+        margin-top: 1rem;
+        :nth-child(1){
+            font-family: outfit;
+            font-weight: 500;
+
+        }
+        :nth-child(2){
+            color: var(--primary-700);
+        }
+    }
+}
+
+
+@keyframes arrow {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(-3px);
+    }
+    
+}
