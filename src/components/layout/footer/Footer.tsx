@@ -42,7 +42,7 @@ function Footer() {
                 <div>
                     <ul className='inter text-white space-y-3'>
                         <li className='flex gap-4'><LocationOn style={{color:'var(--neutral-400)'}}/> <span>123 Serenity Blvd, Dental Plaza, Suite 400</span></li>
-                        <li className='flex gap-4'><Phone style={{color:'var(--neutral-400)'}}/> <span>+1 (555) 000-DENT</span></li>
+                        <li className='flex gap-4'><Phone style={{color:'var(--neutral-400)'}}/> <span>+1 (555) 012-3456</span></li>
                         <li className='flex gap-4 '><Mail style={{color:'var(--neutral-400)'}}/>  <span>hello@aquadental.com</span></li>
                     </ul>
                 </div>

@@ -1,12 +1,12 @@
 import Image from "next/image";
-import clinicImage from "../../public/assets/hero_section.png";
-import xrayImage from "../../public/assets/xray.png";
-import teethImage from "../../public/assets/teeth.png";
+import clinicImage from "../../../public/assets/hero_section.png";
+import xrayImage from "../../../public/assets/xray.png";
+import teethImage from "../../../public/assets/teeth.png";
 import style from "./home.module.scss";
-import DoctorImage1 from '../../public/assets/doc1.png'
-import DoctorImage2 from '../../public/assets/doc2.png'
-import DoctorImage3 from '../../public/assets/doc3.png'
-import DoctorImage4 from '../../public/assets/doc4.png'
+import DoctorImage1 from '../../../public/assets/doc1.png'
+import DoctorImage2 from '../../../public/assets/doc2.png'
+import DoctorImage3 from '../../../public/assets/doc3.png'
+import DoctorImage4 from '../../../public/assets/doc4.png'
 import {
   AlignVerticalCenter,
   ArrowForward,
@@ -29,7 +29,7 @@ export default function Home() {
       {/*================= Hero Section ================== */}
 
       <div className="container">
-        <div className=" grid py-24 grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className=" grid py-16 grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="flex flex-col gap-8 ">
             <div className="text-label-caps text-(--primary-800) border border-(--neutral-300) rounded-4xl bg-(--primary-500)/5 px-4 py-2 w-max">
               PREMIUM DENTAL CARE

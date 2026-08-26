@@ -21,7 +21,7 @@ function Navbar() {
     <div className="shadow-light fixed top-0 h-18 w-full backdrop-blur-xl z-50 bg-neutral-50/80 " >
       <div className="container flex items-center justify-between py-4 ">
         <Logo />
-        <div className={`${openedNavBar ? 'left-0' : '-left-full'} flex items-center gap-8 absolute top-18 w-full flex-col  py-10   bg-neutral-50 lg:relative lg:top-0 lg:flex-row lg:w-auto lg:py-0 lg:left-0 transition-all duration-600 ease-in-out lg:transition-none `}>
+        <div className={`${openedNavBar ? 'left-0' : '-left-full'} flex items-center gap-8 absolute top-18 w-full flex-col  py-10   bg-neutral-50 lg:bg-transparent lg:relative lg:top-0 lg:flex-row lg:w-auto lg:py-0 lg:left-0 transition-all duration-600 ease-in-out lg:transition-none  text-black `}>
           {links.map((link, indx) => {
             const isActive = link.href === '/' ? pathname === '/' : pathname.startsWith(link.href)
             return (
