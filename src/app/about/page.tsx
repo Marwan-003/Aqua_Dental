@@ -194,7 +194,7 @@ function About() {
              </div>
             </div>
         </div>
-        { /* --------------------------- Our Core Pillars Section --------------------------- */}
+        { /* --------------------------- Our Visionaries Section --------------------------- */}
         <div className="container section-padding">
            <div className="flex mb-16 gap-8 justify-between flex-col md:flex-row md:items-end ">
             <div className="max-w-xl" >
