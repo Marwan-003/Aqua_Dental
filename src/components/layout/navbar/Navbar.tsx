@@ -32,7 +32,7 @@ function Navbar() {
           })}
         </div>
         <div className="flex items-center gap-4">
-          <button className="text-white inter bg-(--primary-500) px-6 py-2.5  rounded-xl text-body-md font-bold hover:shadow-lg cursor-pointer transition duration-200 active:scale-95 ">Book now </button>
+          <Link href={'/booking'} className="text-white inter bg-(--primary-500) px-6 py-2.5  rounded-xl text-body-md font-bold hover:shadow-lg cursor-pointer transition duration-200 active:scale-95 ">Book now </Link>
         <button onClick={() => setOpenedNavBar((prev) => !prev)} className="block cursor-pointer active:bg-(--neutral-200) hover:bg-(--neutral-100) rounded-full p-2 lg:hidden"><Menu/></button>
         </div>
       </div>
